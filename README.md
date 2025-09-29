@@ -47,8 +47,47 @@ Program ini menggunakan pola MVC (Model-View-Controller) agar kode lebih terstru
 
 ## Menerapkan Abstraction (minimal 1 abstract class atau 1 interface).
 
+Abstraction dalam OOP (Object-Oriented Programming) digunakan untuk menyembunyikan detail implementasi dan hanya menampilkan hal-hal penting yang perlu digunakan. Dalam program ini, abstraction diterapkan dengan abstract class dan interface
+
+1. Abstract Class
+
 <img width="809" height="326" alt="image" src="https://github.com/user-attachments/assets/97aee781-dcd6-45ba-b540-7be90e033ff7" />
 
+* ItemMakeup dijadikan abstract class karena berfungsi sebagai blueprint untuk semua alat makeup.
+
+* Class ini menyimpan atribut umum seperti nama, jenis, merk, dan jumlah, yang pasti dimiliki semua alat makeup.
+
+* Dengan abstract class, kita tidak bisa membuat objek ItemMakeup secara langsung, tapi harus melalui subclass seperti AlatMakeup, Lipstick, atau Foudation.
+
+2. Interface
+
+<img width="393" height="111" alt="image" src="https://github.com/user-attachments/assets/f3858201-6501-4658-8ed2-584da909ab4b" />
+
+* Interface Detail berisi method abstrak tampilDetail().
+
+* Interface ini memastikan semua class yang mengimplementasikannya wajib punya cara untuk menampilkan detail objek.
+
+* Misalnya, di class AlatMakeup, method tampilDetail() menampilkan informasi lengkap alat makeup sesuai data yang dimasukkan.
+
+## Menerapkan Polymorphism (minimal menggunakan 1 Overloading dan 1 Overriding).
+
+Polymorphism artinya satu method bisa memiliki banyak bentuk. Dalam program ini sudah ada 2 penerapan polymorphism, yaitu Overloading dan Overrding.
+
+1. Overriding
+
+<img width="526" height="138" alt="image" src="https://github.com/user-attachments/assets/86c277bd-649f-4ae5-8b7b-91428c725303" />
+
+<img width="500" height="100" alt="image" src="https://github.com/user-attachments/assets/276fd76c-7980-4a76-bd31-71a9d340a98b" />
+
+<img width="509" height="75" alt="image" src="https://github.com/user-attachments/assets/1163f86b-370d-4bfe-b8fc-d329fe1ca4e2" />
+
+Di sini, Foundation dan Lipstick menimpa (override) method toString() untuk menambahkan atribut khusus (shade/warna). Hasilnya, output jadi lebih spesifik sesuai jenis makeup.
+
+2. Overloading
+
+<img width="1070" height="491" alt="image" src="https://github.com/user-attachments/assets/caa8bede-b91c-4b34-840f-d022f9e1878d" />
+
+Overloading terjadi pada method cariKoleksi, di mana ada dua versi method dengan nama yang sama tetapi berbeda parameter. Versi pertama cariKoleksi() digunakan untuk meminta input keyword pencarian langsung dari pengguna lewat Scanner, sedangkan versi kedua cariKoleksi(String keyword) digunakan untuk melakukan pencarian berdasarkan keyword yang dikirim sebagai parameter. Hal ini menunjukkan konsep method overloading, yaitu penggunaan nama method yang sama dengan perbedaan jumlah atau tipe parameter.
 
 # Penggunaan Program
 
