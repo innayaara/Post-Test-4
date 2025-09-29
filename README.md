@@ -89,6 +89,22 @@ Di sini, Foundation dan Lipstick menimpa (override) method toString() untuk mena
 
 Overloading terjadi pada method cariKoleksi, di mana ada dua versi method dengan nama yang sama tetapi berbeda parameter. Versi pertama cariKoleksi() digunakan untuk meminta input keyword pencarian langsung dari pengguna lewat Scanner, sedangkan versi kedua cariKoleksi(String keyword) digunakan untuk melakukan pencarian berdasarkan keyword yang dikirim sebagai parameter. Hal ini menunjukkan konsep method overloading, yaitu penggunaan nama method yang sama dengan perbedaan jumlah atau tipe parameter.
 
+## Penerapan Abstract Class dan Interface
+
+<img width="869" height="332" alt="image" src="https://github.com/user-attachments/assets/fe8b8ace-cd85-49e5-a4e3-9ddd66f96d7b" />
+
+<img width="301" height="110" alt="image" src="https://github.com/user-attachments/assets/3a8618e4-aa17-4688-a30b-e139bfd98f89" />
+
+<img width="798" height="670" alt="image" src="https://github.com/user-attachments/assets/6d1ee462-7929-4de4-b7a7-ed426cb14958" />
+
+Dalam program ini digunakan kombinasi abstract class dan interface untuk menerapkan konsep Abstraction di Java.
+
+* ItemMakeup dibuat sebagai abstract class yang menyimpan atribut umum seperti nama, jenis, merk, dan jumlah. Abstract class ini berfungsi sebagai blueprint dasar yang dapat diwarisi oleh class lain.
+
+* Detail dibuat sebagai interface yang mendefinisikan kontrak method tampilDetail(), sehingga setiap class yang mengimplementasikan interface ini wajib membuat detail tampilannya masing-masing.
+
+* AlatMakeup merupakan contoh class yang menggabungkan keduanya, yaitu extends ItemMakeup sekaligus implements Detail. Dengan cara ini, class dapat mewarisi atribut dari abstract class sekaligus memenuhi kontrak dari interface.
+
 # Penggunaan Program
 
 <details>
