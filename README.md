@@ -75,7 +75,7 @@ Polymorphism artinya satu method bisa memiliki banyak bentuk. Dalam program ini 
 
 1. Overriding
 
-<img width="526" height="138" alt="image" src="https://github.com/user-attachments/assets/86c277bd-649f-4ae5-8b7b-91428c725303" />
+<img width="449" height="174" alt="image" src="https://github.com/user-attachments/assets/9fadc30b-5f63-4a0f-94ba-0abeb34b0297" />
 
 <img width="500" height="100" alt="image" src="https://github.com/user-attachments/assets/276fd76c-7980-4a76-bd31-71a9d340a98b" />
 
